@@ -16,6 +16,16 @@
 
 What are some questions you would ask to gather requirements?
 ```
+1. Can a parking lot have multiple floors?
+2. Can a parking lot have multiple extrances?
+3. Can a parking lot have multiple exits?
+4. Can a parking lot have multiple types of vehicles?
+5. Can we park any type of vehicle in any slot?
+6. How do we get a ticket?
+7. How do we know if a slot is empty?
+8. How are we allocated a slot?
+9. How do we pay for parking?
+10. What are the multiple ways to pay for parking?
 ```
 
 ## Requirements
