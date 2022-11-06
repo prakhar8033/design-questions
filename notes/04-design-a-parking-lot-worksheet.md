@@ -111,6 +111,38 @@ Add more actors and their use cases as needed.
 **Create a use case diagram for the system.**
 
 ```
+@startuml
+left to right direction
+actor ParkingAttendant
+actor Customer
+actor Admin
+
+rectangle FastAndCalm {
+    Admin --> (Add a parking lot)
+    Admin --> (Add a parking floor)
+    Admin --> (Add a parking spot)
+    Admin --> (Update status of parking spot)
+
+    usecase "Pay" as Pay
+    usecase "Pay Online" as PayOnline
+    usecase "Pay Cash" as PayCash
+
+    Customer --> (Pay)
+    Customer --> (Check spot's status)
+
+    PayOnline .> (Pay) : extends
+    PayCash .> (Pay) : extends
+
+
+    ParkingAttendant --> (Check empty slots)
+    ParkingAttendant --> (Issue a ticket)
+    ParkingAttendant --> (Collect payment)
+    ParkingAttendant --> (Checkout)
+
+    (Issue a ticket) .> (Allocate a slot) : includes
+    Checkout .> (CheckPaymentStatus) : includes
+}
+@enduml
 ```
 
 ## Class diagram
@@ -126,6 +158,48 @@ What will be the major classes and their attributes?
 
 List down the cardinalities of the relationships between the classes.
 ```
+1. Parking Lot
+    a) Name
+    b) Address
+    c) Parking Floors
+    d) Entry Gates
+    e) Exit Gates
+    f) Display Board
+2. Parking Floor
+    a) Floor Number
+    b) Parking Spots
+    c) Display Board
+    d) Payment Counter
+3. Parking Spot
+    a) Spot Number
+    b) Spot Type - `Large, Medium, Small`
+    c) Status - Occupied, Free, Out of order
+4. Parking Ticket
+    a) Ticket ID
+    b) Parking Spot
+    c) Entry Time
+    d) Vehicle
+    e) Entry Gate
+    f) Entry Operator
+5. Receipt/Invoice
+    a) Ticket
+    b) Exit Time
+    c) Invoice ID
+    d) Amount
+    e) Payment
+    f) Payment Status
+6. Payment
+    a) Amount
+    b) Ticket
+    c) Type- Small, Medium, Large
+    d) Status
+    e) Time
+7. Vehicle 
+    a) License Plate
+    b) Vehicle Type - Small, Medium, Large
+8. Parking Attendant
+    a) Name
+    b) Email
 ```
 
 Draw the class diagram.
