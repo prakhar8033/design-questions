@@ -33,6 +33,28 @@ What will be 10 requirements of the system, according to you?
 Do not worry about the correctness of the requirements, just write down whatever comes to your mind.
 Your job is not to generate the requirements, but get better at understanding problem statements and anticipating the functionalities your application might need.
 ```
+1. Should have multiple floors.
+2. Multiple entries and exit points.
+3. A person has to collect ticket at entry and pay at exit.
+4. Pay at-
+    a) Exit counter (cash to the parking attenddant)
+    b) Dedicated automated booth on each floor
+    c) Online
+5. Pay via
+    a) Cash
+    b) Credit
+    c) UPI
+6. Allow entry for a vehicle if a slot is available for it. Show on the display at entry if a slot is not available.
+7. Parking slots of 3 types:
+    a) Small
+    b) Medium
+    c) Large
+8. A car can only be parked at its slot. NOt on any other (even larger).
+9. A display on each floor with the status of the floor correspoing to each vehicle type.
+10. Fees calculated based on per hour price. 
+    a) Small
+    b) Medium
+    c) Large
 ```
 
 ## Use case diagrams
