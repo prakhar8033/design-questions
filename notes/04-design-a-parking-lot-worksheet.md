@@ -65,6 +65,9 @@ If not, try to think of the actors and their interactions with the system.
 ### Actors
 What would be the actors in this system?
 ```
+Customers
+Parking Attendant/ Operator
+Admin
 ```
 
 ### Use cases
@@ -73,35 +76,35 @@ What would be the use cases i.e. the interactions between the actors and the sys
 
 #### Actor 1
 
-Name of the actor - ` `
+Name of the actor - `Admin `
 
 Use cases:
 ```
-1. 
-2. 
-3. 
-4. 
+1. Create a Parking lot
+2. Create a Parking floor
+3. Add new parking slots
+4. Update status of a parking slot
 ```
 #### Actor 2
 
-Name of the actor - ` `
+Name of the actor - `Parking attendant`
 Use cases:
 ```
-1. 
-2. 
-3. 
-4. 
+1. Check empty slots
+2. Issue a ticket - Allocating a slot
+3. Collect payment
+4. Checkout - Has the user paid?
 ```
 
 #### Actor 3
 
-Name of the actor - ` `
+Name of the actor - `Customer`
 Use cases:
 ```
-1. 
-2. 
-3. 
-4. 
+1. Pay - online/exit gate/payment booths
+2. Reveive ticket
+3. Park the vehicle
+4. Check status 
 ```
 Add more actors and their use cases as needed.
 
